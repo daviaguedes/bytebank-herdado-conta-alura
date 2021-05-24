@@ -1,12 +1,14 @@
-public class ContaCorrente extends Conta implements Tributavel {
+package br.com.bytebank.banco.modelo;
+
+public class ContaCorrente extends Conta implements Tributavel, AutoCloseable {
 
 	public ContaCorrente(int agencia, int numero) {
 		super(agencia, numero);
 	}
 	
-	public boolean saca(double valor) {
+	public void saca(double valor) {
 		double valorASacar = valor + 0.2;
-		return super.saca(valorASacar);
+		super.saca(valorASacar);
 	}
 
 	public void deposita(double valor) {
@@ -15,6 +17,11 @@ public class ContaCorrente extends Conta implements Tributavel {
 
 	public double getValorImposto() {
 		return super.saldo * 0.01;
+	}
+
+	@Override
+	public void close(){
+		
 	}
 	
 }
