@@ -1,5 +1,12 @@
 package br.com.bytebank.banco.modelo;
 
+/**
+ * 
+ * @author Davi Guedes
+ * @version 0.1
+ *
+ */
+
 public class Cliente {
 
     private String nome;
