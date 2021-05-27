@@ -16,4 +16,10 @@ public class ContaPoupanca extends Conta implements AutoCloseable{
 		
 	}
 	
+	public String toString() {
+		
+		return super.toString() + " ContaPoupança";
+	}
+	
+	
 }
