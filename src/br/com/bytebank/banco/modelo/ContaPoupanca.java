@@ -9,6 +9,10 @@ public class ContaPoupanca extends Conta implements AutoCloseable{
 	public void deposita(double valor) {
 		super.saldo += valor;	
 	}
+	
+	public void verificarSaldo() {
+		System.out.println("O valor do saldo é: " + super.saldo);
+	}
 
 	@Override
 	public void close() throws Exception {
