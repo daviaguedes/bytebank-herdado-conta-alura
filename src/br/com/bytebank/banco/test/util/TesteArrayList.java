@@ -1,23 +1,21 @@
-package br.com.bytebank.banco.util;
+package br.com.bytebank.banco.test.util;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
 
 import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
 
-public class TesteList {
+public class TesteArrayList {
 
 	public static void main(String[] args) {
-		
-		List<Conta> lista = new ArrayList<Conta>();
+
+		ArrayList<Conta> lista = new ArrayList<Conta>();
 
 		Conta cc = new ContaCorrente(12, 34);
 
 		lista.add(cc);
-
+		
 		Conta cc2 = new ContaPoupanca(45, 67);
 		lista.add(cc2);
 		
@@ -25,7 +23,11 @@ public class TesteList {
 		
 		System.out.println(lista.contains(cc3));
 		
+		for(Object o : lista) {
+			System.out.println(o);
+		}
 		
+		System.out.println(lista.size());
 	}
 
 }

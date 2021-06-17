@@ -27,7 +27,7 @@ public class ContaCorrente extends Conta implements Tributavel, AutoCloseable {
 	@Override
 	public String toString() {
 		
-		return super.toString() + " ContaCorrente";
+		return super.toString() + ", ContaCorrente";
 	}
 	
 }

@@ -106,7 +106,7 @@ public abstract class Conta {
     @Override
     public String toString() {
     	
-    	return "Numero: " + this.numero + " Agência: " + this.agencia;
+    	return "Numero: " + this.numero + ", Agência: " + this.agencia;
     }
 
 }

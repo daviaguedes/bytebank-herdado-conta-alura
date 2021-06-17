@@ -1,17 +1,17 @@
-package br.com.bytebank.banco.util;
+package br.com.bytebank.banco.test.util;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Vector;
 
 import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
 
-public class TesteVector {
+public class TesteList {
 
 	public static void main(String[] args) {
 		
-		List<Conta> lista = new Vector<Conta>();
+		List<Conta> lista = new ArrayList<Conta>();
 
 		Conta cc = new ContaCorrente(12, 34);
 
@@ -23,7 +23,8 @@ public class TesteVector {
 		Conta cc3 = new ContaPoupanca(12, 34);
 		
 		System.out.println(lista.contains(cc3));
-
+		
+		
 	}
 
 }

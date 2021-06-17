@@ -1,17 +1,17 @@
-package br.com.bytebank.banco.util;
+package br.com.bytebank.banco.test.util;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
+import java.util.List;
+import java.util.Vector;
 
 import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
 
-public class TesteLinkedList {
+public class TesteVector {
 
 	public static void main(String[] args) {
 		
-		LinkedList<Conta> lista = new LinkedList<Conta>();
+		List<Conta> lista = new Vector<Conta>();
 
 		Conta cc = new ContaCorrente(12, 34);
 
