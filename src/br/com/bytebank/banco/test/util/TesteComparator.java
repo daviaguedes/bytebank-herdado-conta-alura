@@ -34,9 +34,8 @@ public class TesteComparator {
 			System.out.println(conta);
 		}
         
-        NumeroContaComparator comparator = new NumeroContaComparator();
-        System.out.println("--------");
-        lista.sort(comparator);
+        System.out.println("----------------------------------");
+        lista.sort(new NumeroContaComparator());
         
         for (Conta conta : lista) {
 			System.out.println(conta);
@@ -50,13 +49,7 @@ class NumeroContaComparator implements Comparator<Conta>{
 	@Override
 	public int compare(Conta c1, Conta c2) {
 		
-		if(c1.getNumero()< c2.getNumero()) {
-			return -1;
-		}
-		if(c1.getNumero()> c2.getNumero()) {
-			return 1;
-		}
-		return 0;
+		return Integer.compare(c1.getNumero(), c2.getNumero());
 	}
 	
 }
