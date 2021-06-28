@@ -54,7 +54,6 @@ public class TesteOutraLambda {
 		System.out.println("-------------------------------");
 
 		lista.forEach((conta) -> System.out.println(conta + ", " + conta.getTitular().getNome())); // lambda
-
 	}
 
 }
